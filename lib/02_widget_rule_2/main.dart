@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_together/02_widget_rule_2/presentation/signin_page.dart';
-import '01_widget_rule/presentation/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SigninPage(),
+      home: SingInPage(),
     );
   }
 }

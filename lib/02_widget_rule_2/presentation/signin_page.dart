@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter_together/02_widget_rule_2/presentation/component/input_field.dart';
 import 'package:learn_flutter_together/02_widget_rule_2/presentation/component/big_button.dart';
 import 'package:learn_flutter_together/02_widget_rule_2/presentation/ui/color_styles.dart';
+import 'package:learn_flutter_together/02_widget_rule_2/presentation/ui/text_styles.dart';
 
-class SigninPage extends StatelessWidget {
+class SingInPage extends StatelessWidget {
+  const SingInPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,45 +16,45 @@ class SigninPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 100),
+              const SizedBox(height: 100),
               Text(
                 'Hello,',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                style: TextStyles.headerTextBod,
               ),
               Text(
                 'Welcome Back!',
-                style: TextStyle(fontSize: 20),
+                style: TextStyles.largeTextRegular,
               ),
-              SizedBox(height: 57),
-              InputField(
+              const SizedBox(height: 57),
+              const InputField(
                 labelText: 'Email',
                 hintText: 'Enter Email',
               ),
-              SizedBox(height: 16),
-              InputField(
+              const SizedBox(height: 16),
+              const InputField(
                 labelText: 'Password',
                 hintText: 'Enter Password',
                 obscureText: true,
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Align(
                 alignment: Alignment.topLeft,
                 child: TextButton(
                   onPressed: () {},
                   child: Text(
                     'Forgot Password?',
-                    style: TextStyle(color: ColorStyles.secondary100),
+                    style: TextStyles.smallTextRegular.copyWith(color: ColorStyles.secondary100),
                   ),
                 ),
               ),
-              SizedBox(height: 24),
-              BigButton(label: 'Sign In'),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
+              const BigButton(label: 'Sign In'),
+              const SizedBox(height: 24),
               Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
+                    SizedBox(
                       width: 100, 
                       child: Divider(
                         color: Colors.grey[400],
@@ -62,13 +65,10 @@ class SigninPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Text(
                         'Or Sign in With',
-                        style: TextStyle(
-                          color: ColorStyles.gray2,
-                          fontSize: 12,
-                        ),
+                        style: TextStyles.smallerTextRegular.copyWith(color: ColorStyles.gray2),
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       width: 100, 
                       child: Divider(
                         color: Colors.grey[400],
@@ -78,27 +78,27 @@ class SigninPage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/facebook.png'),
-                  SizedBox(width: 25),
                   Image.asset('assets/google.png'),
+                  const SizedBox(width: 25),
+                  Image.asset('assets/facebook.png'),
                 ],
               ),
-              SizedBox(height: 55),
+              const SizedBox(height: 55),
               Center(
                 child: SizedBox(
                   height: 55,
                   child: RichText(
                     text: TextSpan(
-                      style: TextStyle(color: Colors.black),
+                      style: TextStyles.normalTextRegular.copyWith(color: Colors.black),
                       children: [
-                        TextSpan(text: "Don't have an account? "),
+                        const TextSpan(text: "Don't have an account? "),
                         TextSpan(
                           text: 'Sign up',
-                          style: TextStyle(color: Colors.orange),
+                          style: TextStyles.normalTextRegular.copyWith(color: Colors.orange),
                         ),
                       ],
                     ),

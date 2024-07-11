@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../food_recipe_app/presentation/component/big_button.dart';
+import 'presentation/component/big_button.dart';
 
 class CheckboxPracticeScreen extends StatefulWidget {
   const CheckboxPracticeScreen({super.key});
