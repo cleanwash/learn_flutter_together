@@ -3,8 +3,9 @@ import 'package:learn_flutter_together/01_widget_rule/data/model/creatorProfile.
 
 class CreatorprofileCard extends StatelessWidget {
   final Creatorprofile creatorprofile;
-  
-  const CreatorprofileCard({Key? key, required this.creatorprofile}) : super(key: key);
+
+  const CreatorprofileCard({Key? key, required this.creatorprofile})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,8 @@ class CreatorprofileCard extends StatelessWidget {
                       // 장소
                       Row(
                         children: [
-                          const Icon(Icons.place, color: Colors.green), // 초록색 아이콘으로 변경
+                          const Icon(Icons.place,
+                              color: Colors.green), // 초록색 아이콘으로 변경
                           Text(
                             creatorprofile.place,
                             style: const TextStyle(

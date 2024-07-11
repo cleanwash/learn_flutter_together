@@ -87,7 +87,6 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // 예제 URL을 가진 Popupdialog 인스턴스를 생성합니다.
     final popupdialog = Popupdialog(url: 'app.Recipe.co/jollof_rice');
 
     return MaterialApp(
