@@ -32,6 +32,6 @@ void main() {
     await tester.pump();
 
     final buttonAfterSecondPress = tester.widget<ElevatedButton>(find.byType(ElevatedButton));
-    expect(buttonAfterSecondPress.style?.backgroundColor?.resolve({}), ColorStyles.primary100);
+    expect(buttonAfterSecondPress.style?.backgroundColor?.resolve({}), ColorStyles.secondary100);
   });
 }

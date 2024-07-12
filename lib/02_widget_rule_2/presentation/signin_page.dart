@@ -54,10 +54,10 @@ class SingInPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 100, 
                       child: Divider(
-                        color: Colors.grey[400],
+                        color: ColorStyles.gray1,
                         thickness: 1,
                       ),
                     ),
@@ -65,13 +65,13 @@ class SingInPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Text(
                         'Or Sign in With',
-                        style: TextStyles.smallerTextRegular.copyWith(color: ColorStyles.gray2),
+                        style: TextStyles.smallerTextRegular.copyWith(color: ColorStyles.gray1),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 100, 
                       child: Divider(
-                        color: Colors.grey[400],
+                        color: ColorStyles.gray1,
                         thickness: 1,
                       ),
                     ),
@@ -93,12 +93,12 @@ class SingInPage extends StatelessWidget {
                   height: 55,
                   child: RichText(
                     text: TextSpan(
-                      style: TextStyles.normalTextRegular.copyWith(color: Colors.black),
+                      style: TextStyles.normalTextRegular.copyWith(color: ColorStyles.black),
                       children: [
                         const TextSpan(text: "Don't have an account? "),
                         TextSpan(
                           text: 'Sign up',
-                          style: TextStyles.normalTextRegular.copyWith(color: Colors.orange),
+                          style: TextStyles.normalTextRegular.copyWith(color: ColorStyles.secondary100),
                         ),
                       ],
                     ),
